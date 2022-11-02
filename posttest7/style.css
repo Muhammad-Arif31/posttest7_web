@@ -1,0 +1,215 @@
+* {
+    padding:0;
+    margin:0;
+    font-family: sans-serif;
+}
+
+#icon{
+    width: 30px;
+    cursor: pointer;
+    transform: translateY(10px);
+}
+
+:root{
+    background-color: black;
+    --primary-color: black;
+    --secondary-color: white;
+}
+
+.dark-theme{
+    background-color: white;
+    --primary-color: white;
+    --secondary-color: black;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.medsos {
+    padding: 5px 0;
+    background-color: var(--primary-color);
+}
+
+.medsos ul li {
+    display: inline-block;
+    color: var(--secondary-color);
+    margin-right: 10px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container:after {
+    content:"" ;
+    display: block;
+    clear: both;
+}
+
+header h1 {
+    float: left;
+    padding: 15px 0;
+    color:var(--secondary-color);
+}
+
+header ul {
+    float: right;
+    color:var(--secondary-color);
+}
+
+header ul li {
+    display: inline-block;
+}
+
+header ul li a {
+    padding: 25px 20px;
+    display: inline-block;
+}
+
+header ul li a:hover {
+    background-color: var(--secondary-color);
+    color:var(--primary-color);
+}
+
+.active {
+    background-color: var(--secondary-color);
+    color:var(--primary-color);
+}
+
+.banner {
+    height: 60vh;
+    background-image: url('background.webp');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner h2 {
+    color: white;
+    padding: 30px 25px;
+    border: 3px solid white;
+    text-align: center;
+    margin: 10px 0;
+}
+
+section {
+    padding: 80px 0;
+}
+
+section h3 {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.about {
+    color: var(--secondary-color);
+    word-spacing: 2px;
+    line-height: 25px;
+    margin-bottom: 100px;
+}
+
+footer {
+    color: var(--secondary-color);
+    padding: 30px 0;
+    text-align: center;
+}
+
+@media screen and (max-width: 888px) {
+    .container{
+        width: 90%;
+    }
+    header h1 {
+        text-align: center;
+        float: none;
+    }
+    header ul {
+        text-align: center;
+        float: none;
+    }
+}
+
+.list-barang{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.list-barang a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    max-width: 1068px;
+    margin: auto;
+    width: 100%;
+}
+
+.barang{
+    border: 3px solid var(--secondary-color);
+    cursor: default;
+    opacity: 90%;
+    width: 300px;
+    margin: 5px;
+    border-radius: 5px;
+    transition: 0.3s all linear;
+}
+
+.barang-text {
+    padding-right: 15px;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+.judul h1{
+    font-size: 20px;
+}
+
+.judul .bx:hover {
+    transition: 0.3s all linear;
+    transform: scale(1.1);
+    opacity: 100%;
+}
+
+.harga p{
+    font-size: 15px;
+    margin-bottom: 7px;
+    color: aqua;
+}
+
+.harga p span s{
+    font-size: 12px;
+    padding: 0px 8px;
+}
+
+.pic-1{
+    background-image: url("LP1.jpg");
+}
+
+.pic-2{
+    background-image: url("LP2.jpg");
+}
+
+.pic-3{
+    background-image: url("LP3.jpg");
+}
+
+.barang:hover{
+    transform: scale(1.03);  
+}
+
+.barang:hover .judul .bx{
+    opacity: 100%;
+}
+
+.barang-image{
+    height: 250px;
+    margin-bottom: 7px;
+    background-size: cover;
+    border-radius: 5px 5px 0 0;
+}

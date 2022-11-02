@@ -1,0 +1,502 @@
+* {
+    padding:0;
+    margin:0;
+    font-family: sans-serif;
+}
+
+#icon{
+    width: 30px;
+    cursor: pointer;
+    transform: translateY(10px);
+}
+
+:root{
+    background-color: black;
+    --primary-color: black;
+    --secondary-color: white;
+}
+
+.dark-theme{
+    background-color: white;
+    --primary-color: white;
+    --secondary-color: black;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.medsos {
+    padding: 5px 0;
+    background-color: var(--primary-color);
+}
+
+.medsos ul li {
+    display: inline-block;
+    color: var(--secondary-color);
+    margin-right: 10px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container:after {
+    content:"" ;
+    display: block;
+    clear: both;
+}
+
+header h1 {
+    float: left;
+    padding: 15px 0;
+    color:var(--secondary-color);
+}
+
+header ul {
+    float: right;
+    color:var(--secondary-color);
+}
+
+header ul li {
+    display: inline-block;
+}
+
+header ul li a {
+    padding: 25px 20px;
+    display: inline-block;
+}
+
+header ul li a:hover {
+    background-color: var(--secondary-color);
+    color:var(--primary-color);
+}
+
+.active {
+    background-color: var(--secondary-color);
+    color:var(--primary-color);
+}
+
+.banner {
+    height: 60vh;
+    background-image: url('partner01.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner h2 {
+    color: white;
+    padding: 30px 25px;
+    border: 3px solid white;
+    text-align: center;
+    margin: 10px 0;
+}
+
+section {
+    padding: 80px 0;
+}
+
+section h3 {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.about {
+    color: var(--secondary-color);
+    word-spacing: 2px;
+    line-height: 25px;
+    margin-bottom: 100px;
+}
+
+footer {
+    color: var(--secondary-color);
+    padding: 30px 0;
+    text-align: center;
+}
+
+@media screen and (max-width: 888px) {
+    .container{
+        width: 90%;
+    }
+    header h1 {
+        text-align: center;
+        float: none;
+    }
+    header ul {
+        text-align: center;
+        float: none;
+    }
+}
+
+/*Order Here*/
+.form{
+    color: white;
+    display: flex;
+    height: 30vh;
+    width: 65vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.contain{
+    max-width: 800px;
+    width: 100%;
+    padding: 12px 30px;
+    background: linear-gradient(90deg, rgba(190,232,240,0.6814075972185749) 0%, rgba(182,198,201,0.24163168685442926) 50%, rgba(190,232,240,0.5301470930168943) 100%);
+}
+
+.contain .head{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    text-align: center;
+    padding: 0 0 20px 0;
+}
+
+.contain .head::before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(135deg, purple, lightblue, pink);
+}
+
+.contain form  .detail-row{
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+form .detail-row .detail-box{
+    width: calc(100% / 2 - 20px);
+    margin-bottom: 15px;
+}
+
+.detail-row .detail-box{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.detail-row .detail-box input{
+    height: 45px;
+    width: 380px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid white;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.detail-row .detail-box input:focus,
+.detail-row .detail-box input:valid{
+    border-color: aliceblue;
+}
+
+form .radio-btn .radio-title{
+    font-size: 20px;
+    font-weight: 500;
+    border-bottom: 2px solid;
+}
+
+form .radio-btn .kategori{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+form .submiting{
+    text-align: center;
+}
+
+form .submiting input{
+    padding: 10px 0;
+    margin-top: 10px;
+    height: 100%;
+    width: 50%;
+    outline: none;
+    color: white;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, purple, lightblue, pink);
+}
+
+form .submiting input:hover{
+    background: linear-gradient(-135deg, purple, lightblue, pink); ;
+}
+
+@media (max-widith:584px){
+    .medsos{
+        max-width: 100%;
+    }
+    form .detail-row .detail-box{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    form .radio-btn .kategori{
+        width: 100%;
+    }
+    .medsos form .detail-row{
+        max-height: 300px;
+        overflow: scroll;
+    }
+    .detail-row::_webkit-scrollbar{
+        width: 0;
+    }
+}
+
+.tampil{
+    max-width: 800px;
+    width: 100%;
+    padding: 12px 30px;
+    background: linear-gradient(90deg, rgba(190,232,240,0.6814075972185749) 0%, rgba(182,198,201,0.24163168685442926) 50%, rgba(190,232,240,0.5301470930168943) 100%);
+}
+
+.tampil .judul{
+    font-size: 25px;
+    font-weight: 800;
+    color: white;
+    position: relative;
+    text-align: center;
+    padding: 0 0 20px 0;
+}
+
+.tampil .judul::before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(135deg, purple, lightblue, pink);
+}
+
+.tampil .contain-tampil{
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+.tampil .end{
+    font-size: 25px;
+    font-weight: 800;
+    color: white;
+    position: relative;
+    text-align: center;
+    padding: 0 0 20px 0;
+}
+
+.tampil .end::before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    left: 0;
+    bottom: 66px;
+    width: 100%;
+    background: linear-gradient(135deg, purple, lightblue, pink);
+}
+
+/* tampilan form */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 150px;
+    height: 100px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 12px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: orangered;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.button{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.button:hover{
+    border: 1px solid orangered;
+    background: orangered;
+    transition: 1s;
+}
+
+@media screen and (max-width: 700px){
+    .nav-links ul li{
+        margin: 1px;
+        list-style: none;
+        display: inline-flex;
+        flex-direction: row;
+        padding: 12px 12px;
+        top: 0;
+    }
+    .nav-links ul li a{
+        font-size: 10px;
+    }
+}
+
+.bg-tampil{
+    background-image: url('tambah-bg.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+
+/*tampilkan*/
+
+.daftar-pesanan{
+    color: white;
+}
+
+.table-section{
+    margin-top: 20px;
+    height: 650px;
+    overflow: hidden;
+}
+
+table{
+    width: 100%;
+    table-layout: fixed;
+    min-width: 1000px;
+}
+
+thead th{
+    position: sticky;
+    top: 0;
+    background-color: #f6f9fc;
+    color: #8493a5;
+    font-size: 15px;
+}
+
+th, td {
+    border-bottom: 1px solid white;
+    padding: 10px 15px;
+    text-align: center;
+    color: white;
+}
+
+button{
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    color: #ffffff;
+}
+
+button a{
+    text-decoration: none;
+}
+
+td button:nth-child(1){
+    background-color: red;
+}
+td button:nth-child(2){
+    background-color: #0298cf;
+}
+
+.search-box{
+    position :relative;
+    top: 60%;
+    left: 30%;
+    transform: translate(-30%,-30%);
+    background: white;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px ;
+    margin-left: 55px; 
+    margin-right: 205px;
+    margin-top: 50px;
+}
+
+.search-btn{
+ color: black;
+ float: right;
+ width: 40px;
+ height: 40px;
+ border-radius: 50%;
+ background: white;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.search-txt{
+    border:none;
+    background: none;
+    outline: none;
+    float:left;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    text-indent: 12px;
+    width: 700px;
+}
